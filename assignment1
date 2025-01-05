@@ -3,7 +3,8 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
-				git branch: 'main', url: 'https://github.com/mohancando/pipelineexample.git'
+				//git branch: 'main', url: 'https://github.com/mohancando/pipelineexample.git'
+				sh 'echo "Hello mohan"'
 			}
 		}
 		
