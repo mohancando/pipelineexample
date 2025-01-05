@@ -3,14 +3,15 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
-				#git branch: 'main', url: 'https://github.com/mohancando/pipelineexample.git'
+				//git branch: 'main', url: 'https://github.com/mohancando/pipelineexample.git'
 				sh 'echo "Hello mohan"'
 			}
 		}
 		
 		stage('Test') {
             		steps {
-                		echo "Building project"
+                		sh 'git checkout branch1; echo "hello branch1"'
+			
             		}
         	}
 	}
